@@ -99,3 +99,15 @@ console.log(next_biggest);
 
 6.
 //import and require
+
+7.
+function add(n){
+    var addNext = function(x){
+    return add(n+x);
+    }
+    
+    addNext.valueOf = function(){
+    return n;
+    }
+    return addNext;
+    }
